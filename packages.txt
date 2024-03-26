@@ -4,3 +4,4 @@ python-dev
 postgresql-server-dev-all
 build-essential
 psycopg2
+psycopg2-binary
