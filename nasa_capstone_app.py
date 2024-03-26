@@ -8,15 +8,15 @@ import plotly.express as px
 import plotly.graph_objects as go
 import requests
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 def get_db_data():
     try:
         ######## DATABASE CONNECTION AND DATA RETREIVAL ########
         conn = psycopg2.connect(
             dbname = "pagila",
-            user = os.getenv("DB_USER"),
-            password = os.getenv("DB_PASSWORD"),
+            user = "de_lube",
+            password = "doptionary",
             host = "data-sandbox.c1tykfvfhpit.eu-west-2.rds.amazonaws.com",
             port = "5432"
         )
