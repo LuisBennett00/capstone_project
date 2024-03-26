@@ -1,3 +1,5 @@
 libpq-dev
+postgresql-server-dev-all
+build-essential
 psycopg2-binary
 psycopg2
