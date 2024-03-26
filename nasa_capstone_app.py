@@ -1,4 +1,5 @@
 import psycopg2
+import psycopg2-binary
 import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
 import matplotlib.pyplot as plt
