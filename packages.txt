@@ -1,6 +1,4 @@
 libpq-dev python3-dev
 postgresql-server-dev-all
-pg8000
 build-essential
-psycopg2-binary
-psycopg2
+psycopg2-binary == 2.9.3
