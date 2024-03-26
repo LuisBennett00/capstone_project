@@ -1,4 +1,4 @@
-import psycopg2_binary
+import psycopg2
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
