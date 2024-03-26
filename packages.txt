@@ -1,4 +1,6 @@
-libpq-dev python3-dev
+libpq-dev
+python3-dev
+python-dev
 postgresql-server-dev-all
 build-essential
 psycopg2-binary == 2.9.9
