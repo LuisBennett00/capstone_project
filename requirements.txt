@@ -3,5 +3,4 @@ matplotlib
 seaborn 
 pandas 
 plotly
-dotenv 
 psycopg2-binary
