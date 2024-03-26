@@ -1,4 +1,4 @@
-libpq-dev
+libpq-dev python3-dev
 postgresql-server-dev-all
 build-essential
 psycopg2-binary
