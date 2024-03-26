@@ -1,6 +1,6 @@
 libpq-dev python3-dev
 postgresql-server-dev-all
-postgresql-devel
+pg8000
 build-essential
 psycopg2-binary
 psycopg2
