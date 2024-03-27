@@ -72,7 +72,7 @@ def main():
 
     with st.sidebar:
         selected_tab = st.radio("Available Martian Data", ["Latest Weather Updates", "Temperature Visualisation", "Sunset and Sunrise Visualisation", "Pressure Visualisation"])
-    if selected_tab == "Last Seven Days on Mars":
+    if selected_tab == "Latest Weather Updates":
         st.header("Most recent weather updates:")
         ######## LAST SEVERAL DAYS OF WEATHER ########
         if rows:
