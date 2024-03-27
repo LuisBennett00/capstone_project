@@ -71,7 +71,7 @@ def main():
     jpeg_url, photo_date, camera_name = get_rover_photos()
 
     with st.sidebar:
-        selected_tab = st.radio("Available Martian Data", ["Last Seven Days on Mars", "Temperature Visualisation", "Sunset and Sunrise Visualisation", "Pressure Visualisation"])
+        selected_tab = st.radio("Available Martian Data", ["Latest Weather Updates", "Temperature Visualisation", "Sunset and Sunrise Visualisation", "Pressure Visualisation"])
     if selected_tab == "Last Seven Days on Mars":
         st.header("Most recent weather updates:")
         ######## LAST SEVERAL DAYS OF WEATHER ########
