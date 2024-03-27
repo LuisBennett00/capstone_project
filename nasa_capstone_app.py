@@ -67,6 +67,7 @@ def get_rover_photos():
 
 def main():
     st.title("Mars Weather Data")
+    st.divider()
     sol_numbers, df, rows = get_db_data()
     jpeg_url, photo_date, camera_name = get_rover_photos()
 
@@ -91,6 +92,7 @@ def main():
             st.warning("No data available.")
 
         #st.write(df)
+        st.divider()
         ######## DISPLAY CURIOSITY LATEST PHOTO ########
         st.write(f"Here is the latest photo from mars taken on Sol: {photo_date} using the {camera_name}!")
         st.image(jpeg_url, caption='Latest Photo from Curisoity!')
@@ -110,6 +112,8 @@ def main():
         plt.title('Min Temperature per Sol')
         plt.grid(True)
         st.pyplot(plt)
+
+        st.divider()
 
         df['Sol Number'] = pd.to_numeric(df['Sol Number'])
         #df['Temperature Min'] = df['Temperature Min'].str.replace('°F', '').astype(float)
@@ -146,6 +150,8 @@ def main():
         plt.legend()
         plt.grid(True)
         st.pyplot(plt)
+
+        st.divider()
 
         ######## SUNRISE TIMESERIES ########
         plt.figure(figsize=(10, 6))
