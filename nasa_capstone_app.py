@@ -113,7 +113,7 @@ def main():
         plt.grid(True)
         st.pyplot(plt)
 
-        st.divider()
+        #st.divider()
 
         df['Sol Number'] = pd.to_numeric(df['Sol Number'])
         #df['Temperature Min'] = df['Temperature Min'].str.replace('°F', '').astype(float)
@@ -151,7 +151,7 @@ def main():
         plt.grid(True)
         st.pyplot(plt)
 
-        st.divider()
+        #st.divider()
 
         ######## SUNRISE TIMESERIES ########
         plt.figure(figsize=(10, 6))
