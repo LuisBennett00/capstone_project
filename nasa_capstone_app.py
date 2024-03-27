@@ -99,7 +99,7 @@ def main():
 
     elif selected_tab == "Temperature":
         st.header("Martian Max and Min Temperature Records")
-        st.write("This page displays a time series of all the recorded minimum and maximum temperatures collected from the Curiosity Rover, the temperature is recored in fahrenheit and measured across Martian Sols(Martian equivelent of days)!
+        st.write("This page displays a time series of all the recorded minimum and maximum temperatures collected from the Curiosity Rover, the temperature is recored in fahrenheit and measured across Martian Sols(Martian equivelent of days)!")
         ######## MAX AND MIN TEMPERATURE TIMESERIES ########
         df['Sol Number'] = pd.to_numeric(df['Sol Number'])
         df['Temperature Min'] = df['Temperature Min'].str.replace('°F', '').astype(float)
