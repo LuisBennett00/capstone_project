@@ -119,7 +119,7 @@ def main():
         df = df.sort_values(by='Sol Number')
         plt.figure(figsize=(10, 6))
         #plt.plot(df['Sol Number'], df['Temperature Min'], color='orange', linewidth = 5)
-        plt.plot(df['Sol Number'], df['Temperature Max'], color='orange', linewidth = 5)
+        plt.plot(df['Sol Number'], df['Temperature Max'], marker='o', color='orange', linewidth = 3)
         plt.xlabel('Sol Number')
         plt.ylabel('Temperature (F)')
         plt.title('Max Temperature per Sol')
