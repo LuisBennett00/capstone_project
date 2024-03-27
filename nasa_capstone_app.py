@@ -72,7 +72,7 @@ def main():
     jpeg_url, photo_date, camera_name = get_rover_photos()
 
     with st.sidebar:
-        selected_tab = st.radio("Available Martian Data", ["Latest Weather Updates", "Temperature Visualisation", "Sunset and Sunrise Visualisation", "Pressure Visualisation"])
+        selected_tab = st.radio("Available Martian Data", ["Latest Weather Updates", "Temperature", "Sunset and Sunrise", "Pressure"])
     if selected_tab == "Latest Weather Updates":
         st.header("Most recent weather updates:")
         ######## LAST SEVERAL DAYS OF WEATHER ########
@@ -97,7 +97,7 @@ def main():
         st.write(f"Here is the latest photo from mars taken on Sol: {photo_date} using the {camera_name}!")
         st.image(jpeg_url, caption='Latest Photo from Curisoity!')
 
-    elif selected_tab == "Temperature Visualisation":
+    elif selected_tab == "Temperature":
         st.header("Here is a visualisation of the temperature on Mars")
         ######## MAX AND MIN TEMPERATURE TIMESERIES ########
         df['Sol Number'] = pd.to_numeric(df['Sol Number'])
@@ -128,7 +128,7 @@ def main():
         plt.grid(True)
         st.pyplot(plt)
 
-    elif selected_tab == "Sunset and Sunrise Visualisation":
+    elif selected_tab == "Sunset and Sunrise":
         st.header("Here is a visualisation of the sunset and sunrise times on Mars")
          ######## SUNET TIMESERIES ########
 
@@ -163,7 +163,7 @@ def main():
         plt.grid(True)
         st.pyplot(plt)
 
-    elif selected_tab == "Pressure Visualisation":
+    elif selected_tab == "Pressure":
         st.header("Here is a visualisation of the pressure on Mars")
         ######## PRESSURE TIME SERIES ########
         df = df.sort_values(by='Sol Number')
