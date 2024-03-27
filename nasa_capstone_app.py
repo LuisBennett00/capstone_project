@@ -94,6 +94,7 @@ def main():
         #st.write(df)
         st.divider()
         ######## DISPLAY CURIOSITY LATEST PHOTO ########
+        st.header("Latest Image from Curiosity!")
         st.write(f"Here is the latest photo from mars taken on Sol: {photo_date} using the {camera_name}!")
         st.image(jpeg_url, caption='Latest Photo from Curisoity!')
 
