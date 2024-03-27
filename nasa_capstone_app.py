@@ -130,7 +130,8 @@ def main():
         st.pyplot(plt)
 
     elif selected_tab == "Sunset and Sunrise":
-        st.header("Here is a visualisation of the sunset and sunrise times on Mars")
+        st.header("Martian Sunset and Sunrise Records")
+        st.write("On this page you will find a time series of the sunset and sunrise time as collected from Curiosity!")
          ######## SUNET TIMESERIES ########
 
         df['Sunrise'] = pd.to_datetime(df['Sunrise'], format='%H:%M:%S')
@@ -165,7 +166,8 @@ def main():
         st.pyplot(plt)
 
     elif selected_tab == "Pressure":
-        st.header("Here is a visualisation of the pressure on Mars")
+        st.header("Martian Preassure Records")
+        st.write("This page will display the recorded preassure of each sol collected by Curiosity measured in pascal(Pa)")
         ######## PRESSURE TIME SERIES ########
         df = df.sort_values(by='Sol Number')
 
